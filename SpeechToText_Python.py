@@ -1,4 +1,4 @@
-import speech_recognition as sr #we install speech recognition for audio command and also install pyaudio for audio
+import speech_recognition  as sr #we install speech recognition for audio command and also install pyaudio for audio
 import os                      # we use os to run command efficientely
 import threading               # we use multithreading to run multiple task at a time
 from mtranslate import translate # we use mtranslate to translate the text to any language
@@ -21,7 +21,7 @@ def Speech_TO_Text_Python():
     recognizer.dynamic_energy_adjustment_damping = 0.010
     recognizer.dynamic_energy_ratio = 1.0
     recognizer.pause_threshold = 0.8
-    recognizer.operation_timeout = None
+    recognizer.operation_timeout = None 
     recognizer.pause_threshold = 0.2
     recognizer.non_speaking_duration = 0.2
 
